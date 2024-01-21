@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Properties</title>
+    <style>
+        div {
+            width: 400px;
+            height: 300px;
+            border: 1px dotted;
+        }
+        .box1 {
+            width: 200px;
+            height: 50px;
+            border: none;
+            /* background-color: red; */
+            /* background-color: #ff0000; */
+            /* background-color: rgb(255, 0, 0); */
+            background-color: rgba(255,0,0,0.5);
+        }
+        .box2 {
+            background-image: url("images/mlogo.png");
+            background-repeat: no-repeat;
+            /* background-repeat: repeat; */
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+        }
+        .box3 {
+            background-image: url("images/mlogo.png");
+            background-repeat: no-repeat;
+            background-position: top right;
+            /* total 9 types */
+            /* top, bottom, left, right, center */
+            /* top left, top right, bottom left, bottom right */
+        }
+        .box4 {
+            background-image: url("images/mlogo.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            /* background-size: auto; */
+            /* background-size: 100px 50%; */
+            /* background-size: contain; */
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>배경 관련 속성</h1>
+    <h2>background-color</h2>
+    <p>요소의 배경 색상</p>
+    <div class="box1"></div>
+    <hr>
+
+    <h2>Background-image, repeat</h2>
+    <p>요소의 배경 이미지 삽입 및 반복 여부 지정</p>
+    <div class="box2"></div>
+    <hr>
+
+    <h2>Background-position</h2>
+    <p>요소의 배경 이미지 위치 지정</p>
+    <div class="box3"></div>
+    <hr>
+
+    <h2>Background-size</h2>
+    <p>요소의 배경 이미지 크기 지정</p>
+    <div class="box4"></div>
+    <hr>
+</body>
+</html>

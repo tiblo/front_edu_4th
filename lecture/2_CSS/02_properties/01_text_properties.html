@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Properties</title>
+    <style>
+        #p1 {
+            color: red;
+        }
+        table {
+            width: 80%;
+        }
+        th {
+            width: 30%;
+        }
+        th:first-child {
+            width: 10%;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        .box {
+            width: 400px;
+            height: 250px;
+            border: 1px dotted;
+        }
+    </style>
+</head>
+<body>
+    <h1>글자 관련 속성</h1>
+    <h2>color</h2>
+    <p id="p1">글자의 색상을 지정하는 속성</p>
+    <hr>
+
+    <h2>text-align</h2>
+    <p>요소의 내용(글자) 또는 하위 요소의 정렬 방식을 지정</p>
+    <table border="1">
+        <tr>
+            <th></th>
+            <th>left(default)</th>
+            <th>center</th>
+            <th>right</th>
+        </tr>
+        <tr>
+            <td>Text</td>
+            <td style="text-align: left;">1</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: right;">3</td>
+        </tr>
+        <tr>
+            <td>Element</td>
+            <td style="text-align: left;">
+                <img src="images/cake1.png"></img>
+            </td>
+            <td style="text-align: center;">
+                <img src="images/cake1.png"></img>
+            </td>
+            <td style="text-align: right;">
+                <img src="images/cake1.png"></img>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>text-decoration</h2>
+    <p style="text-decoration: none;">속성값 - none(default)</p>
+    <p style="text-decoration: underline;">속성값 - underline</p>
+    <p style="text-decoration: overline;">속성값 - overline</p>
+    <p style="text-decoration: line-through;">속성값 - line-through</p>
+    <hr>
+
+    <h2>line-height</h2>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus nunc et congue convallis. Duis lorem mauris, varius vitae rhoncus suscipit, mattis et est. Praesent porta lacus sit amet ipsum volutpat auctor. Mauris faucibus nulla commodo leo cursus, eget sollicitudin velit sodales. Vivamus vitae urna ornare, condimentum felis at, elementum nunc.</p>
+    </div>
+    <div class="box">
+        <p style="line-height: 2em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus nunc et congue convallis. Duis lorem mauris, varius vitae rhoncus suscipit, mattis et est. Praesent porta lacus sit amet ipsum volutpat auctor. Mauris faucibus nulla commodo leo cursus, eget sollicitudin velit sodales. Vivamus vitae urna ornare, condimentum felis at, elementum nunc.</p>
+    </div>
+</body>
+</html>

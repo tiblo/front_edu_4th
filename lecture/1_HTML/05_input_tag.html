@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제5-입력 양식</title>
+</head>
+<body>
+    <h2>입력 양식</h2>
+    일반형태 : 
+    <input type="text" value="초기값" placeholder="입력(초기)값이 없으면 보임">
+    <br>
+    비활성화 : 
+    <input type="text" disabled>
+    <br>
+    읽기전용 : 
+    <input type="text" value="어떤값" readonly>
+    <hr>
+    <h2>다양한 입력 형태</h2>
+    비밀번호 : 
+    <input type="password" placeholder="비밀번호를 입력하세요.">
+    <br>
+    버튼형태 : 
+    <input type="button" value="버튼">
+    <br>
+    체크박스 : 
+    <input type="checkbox" name="ck">강아지
+    <input type="checkbox" name="ck">고양이
+    <br>
+    라디오버튼 :
+    <input type="radio" name="ra">남성
+    <input type="radio" name="ra">여성
+    <hr>
+    <h2>기타 입력 양식</h2>
+    <h3>텍스트 영역</h3>
+    <textarea rows="5" cols="30"></textarea>
+    <h3>선택 목록</h3>
+    <select>
+        <option>Americano</option>
+        <option>Caffe latte</option>
+        <option>Espresso</option>
+    </select>
+    <h3>꼬리표 태크(label)</h3>
+    직업선택 : 
+    <input type="radio" name="job" id="std">
+    <label for="std">학생</label>
+    <label>
+        <input type="radio" name="job">회사원
+    </label>    
+</body>
+</html>
