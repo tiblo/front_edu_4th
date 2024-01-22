@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Handling</title>
+    <style>
+        div.box {
+            margin: 20px;
+            width: 80%;
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .btn2 {
+            width: 100px;
+            height: 30px;
+            background-color: aqua;
+            margin: 0 auto;
+            border: 1px solid;
+        }
+        .btn2:hover {
+            background-color: aquamarine;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .item {
+            width: 100px;
+            height: 50px;
+            border: 1px solid;
+        }
+        .btn-area {
+            margin-top: 50px;
+        }
+        .bgyellow {
+            background-color: yellow;
+            border: 2px dotted green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>이벤트 처리</h2>
+        <button id="btn1">버튼1</button><p/>
+        <div class="btn2">버튼2</div>
+    </div>
+    <div class="box">
+        <h2>스타일 변경</h2>
+        <div class="container">
+            <div class="item" id="item1"></div>
+            <div class="item" id="item2"></div>
+            <div class="item" id="item3"></div>
+        </div>
+        <div class="btn-area">
+            <button id="btn3">스타일1</button>
+            <button id="btn4">스타일2</button>
+            <button id="btn5">스타일3</button>
+        </div>
+    </div>
+</body>
+<script>
+    const btn1 = document.getElementById("btn1");
+    const btn2 = document.querySelector(".btn2");
+
+    btn1.onclick = function() {
+        alert("버튼1 눌림!!");
+    }
+
+    btn2.addEventListener("click", function(){
+        alert("버튼2 눌림!!")
+    });
+
+    const btn3 = document.querySelector("#btn3");
+    const btn4 = document.querySelector("#btn4");
+    const btn5 = document.querySelector("#btn5");
+
+    const item1 = document.querySelector("#item1");
+    const item2 = document.querySelector("#item2");
+    const item3 = document.querySelector("#item3");
+
+    btn3.onclick = function() {
+        item1.setAttribute("style", "background-color: red");
+    }
+    btn4.onclick = function() {
+        item2.style.border = "3px dashed blue";
+    }
+    btn5.onclick = function() {
+        item3.className = "item bgyellow";
+    }
+</script>
+</html>

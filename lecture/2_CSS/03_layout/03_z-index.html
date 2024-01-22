@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        .z1 {
+            top: 0;
+            left: 0;
+            background-color: red;
+            z-index: 3;
+        }
+        .z2 {
+            top: 30px;
+            left: 30px;
+            background-color: green;
+            z-index: 20;
+        }
+        .z3 {
+            top: 60px;
+            left: 60px;
+            background-color: blue;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>z-index</h1>
+    <p>요소 중첩 시 쌓임 순서를 지정</p>
+    <p>숫자 값이 큰 요소는 위로, 작은 요소는 아래로 쌓임</p>
+    <div class="z1 box">box1</div>
+    <div class="z2 box">box2</div>
+    <div class="z3 box">box3</div>
+</body>
+</html>

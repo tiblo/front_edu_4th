@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 300px;
+            border: 1px solid;
+            padding: 5px;
+            position: relative;
+        }
+        .item {
+            padding: 3px;
+            width: 100px;
+            border: 1px solid;
+        }
+        .abs {
+            position: absolute;
+            bottom: 50px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>relative와 absolute</h1>
+    <p>부모 요소에 relative를 설정하고 자식 요소를 absolute로 설정</p>
+    <div class="box">
+        <div class="item abs">absolute</div>
+    </div>
+</body>
+</html>

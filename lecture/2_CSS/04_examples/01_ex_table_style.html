@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 꾸미기</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+        }
+        table, th, td {
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        th, td {
+            padding: 5px;
+            height: 40px;
+            vertical-align: bottom;
+        }
+        th {
+            border-top: 1px solid rgb(107, 107, 107);
+            font-size: 1.2rem;
+        }
+        tr:nth-child(even) {
+            background-color: rgb(172,177,182);
+        }
+        tr:first-child {
+            background-color: rgb(46, 70, 115)!important;
+            color: white;
+        }
+        tr:last-child>td {
+            border-bottom: 1px solid black;
+        }
+        /* tr:hover {
+            background-color: #8d8d8d;
+            color: white
+        } */
+        td:hover {
+            background-color: #8c8c8c;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>성</th>
+            <th>이름</th>
+            <th>연락처</th>
+        </tr>
+        <tr>
+            <td>김</td>
+            <td>길동</td>
+            <td>010-1111-2222</td>
+        </tr>
+        <tr>
+            <td>나</td>
+            <td>길동</td>
+            <td>010-2222-3333</td>
+        </tr>
+        <tr>
+            <td>박</td>
+            <td>길동</td>
+            <td>010-3333-4444</td>
+        </tr>
+        <tr>
+            <td>장</td>
+            <td>길동</td>
+            <td>010-4444-5555</td>
+        </tr>
+        <tr>
+            <td>최</td>
+            <td>길동</td>
+            <td>010-5555-6666</td>
+        </tr>
+    </table>
+</body>
+</html>

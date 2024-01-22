@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드롭다운 메뉴</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        li {
+            float: left;
+        }
+        li a, .dbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover, .drop:hover {
+            background-color: red;
+        }
+        li.drop {
+            display: inline-block;
+        }
+        .dcont {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .drop:hover .dcont {
+            display: block;
+        }
+        .dcont a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dcont a:hover {
+            background-color: #969696;
+        }
+    </style>
+</head>
+<body>
+    <h2>hover를 사용한 드롭다운 메뉴 만들기</h2>
+<p>마우스가 올라가면 메뉴가 열립니다.</p>
+<div class="menubar">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">News</a></li>
+		<li class="drop">
+			<a href="#" class="dbtn">Dropdown</a>
+			<div class="dcont">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</li>
+	</ul>
+</div>
+<p>이런저런 내용</p><p>이런저런 내용</p><p>이런저런 내용</p>
+<p>이런저런 내용</p><p>이런저런 내용</p><p>이런저런 내용</p>
+<p>이런저런 내용</p><p>이런저런 내용</p><p>이런저런 내용</p>
+<p>이런저런 내용</p><p>이런저런 내용</p><p>이런저런 내용</p>
+<p>이런저런 내용</p><p>이런저런 내용</p><p>이런저런 내용</p>
+</body>
+</html>

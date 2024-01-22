@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Statement</title>
+</head>
+<body>
+    <p>개발자 도구의 Console에 출력됩니다.</p>
+</body>
+<script>
+    let sw1 = false;
+    if(sw1){
+        let conf = confirm("실행할까요?");
+
+        if(conf == true){
+            alert("실행을 선택하였습니다.");
+        }
+        else {
+            alert("실행하지 않습니다.");
+        }
+    }
+
+    let sw2 = false;
+    if(sw2){
+        let prom = prompt("이름를 입력하세요.");
+        console.log(prom);
+        if(prom == ""){
+            alert("이름 입력이 필요합니다.");
+        }
+        else if(prom == null){
+            alert("취소하였습니다.");
+        }
+        else {
+            alert(prom + "님 반갑습니다.");
+        }
+    }
+
+    let sw3 = true;
+    let fruits = ["사과", "배", "바나나"];
+    if(sw3){
+        let fr = prompt(fruits + " 중에 하나를 선택하세요.");
+        
+        switch(fr){
+            case "사과":
+                alert("사과를 선택하였습니다.");
+                break;
+            case "배":
+                alert("배를 선택하였습니다.");
+                break;
+            case "바나나":
+                alert("바나나를 선택하였습니다.");
+                break;
+            default:
+                alert("3개 중에 하나를 선택하세요.");
+        }
+    }
+</script>
+</html>

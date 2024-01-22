@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        .wrap {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        .space {
+            width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: aqua;
+        }
+        .item {
+            width: 100px;
+            height: 50px;
+            background-color: yellow;
+            margin: 5px;
+        }
+        .section {
+            padding: 10px;
+        }
+        /* f-item의 틀깨짐 방지 */
+        /* .float-space {
+            overflow: hidden; 
+        } */
+        /* f-item의 틀깨짐 방지 : clear-fix */
+        .float-space::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+        .float-item {
+            float: right; /* 정렬 방식만 가능 */
+        } /* float는 하위 요소(item)에서 작성 */
+        .flex-space {
+            display: flex; /* 내부 아이템의 배치방향 여백 조정이 가능 */
+            flex-direction: row-reverse; /* 배치방향 */
+            justify-content: right; /* 정렬 방식 */
+        } /* flex는 부모 요소(container)에서 작성 */
+        .flex-item {
+            /* 배치와는 관계없는 속성들로 아이템 꾸미기 위한 내용 */
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>float와 flext 비교</h1>
+        <hr>
+        <h2>float를 활용한 layout</h2>
+        <div class="section">
+            <div class="space float-space">
+                <div class="item float-item">1</div>
+                <div class="item float-item">2</div>
+                <div class="item float-item">3</div>
+                <div class="item float-item">4</div>
+            </div>
+        </div>
+        <hr>
+        <h2>flex를 활용한 layout</h2>
+        <div class="section">
+            <div class="space flex-space">
+                <div class="item flex-item">1</div>
+                <div class="item flex-item">2</div>
+                <div class="item flex-item">3</div>
+                <div class="item flex-item">4</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

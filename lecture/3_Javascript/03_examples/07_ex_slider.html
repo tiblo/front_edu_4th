@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        @import url(css/slider.css);
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="image_container">
+            <img src="images/img_5terre.jpg">
+            <img src="images/img_forest.jpg">
+            <img src="images/img_lights.jpg">
+            <img src="images/img_mountains.jpg">
+        </div>
+    </div> 
+</body>
+<script src="js/slider.js"></script>
+<script>
+    const wsize = 600;
+    const hsize = 400;
+    let playTime = 3;
+    let start = 1;
+    let auto = true;
+    
+    startSlider();
+</script>
+</html>

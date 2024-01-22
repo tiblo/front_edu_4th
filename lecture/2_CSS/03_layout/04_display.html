@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .ib {
+            width: 150px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: yellow;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Property</h1>
+    <p>요소의 화면 출력 특성을 설정</p>
+
+    <h2>block</h2>
+    <div>
+        block은 인라인 요소를
+        <span style="display: block;">
+            블록 요소로
+        </span>
+        변경
+    </div>
+    <hr>
+
+    <h2>inline</h2>
+    <div>
+        inline은 블록 요소를 
+        <p style="display: inline;">
+            인라인 요소로
+        </p>
+        변경
+    </div>
+    <hr>
+
+    <h2>inline-block</h2>
+    <div>
+        inline-block은 
+        <span class="ib">
+            inline의 특성과
+        </span>
+        <span class="ib">
+            block의 특성을
+        </span>
+        모두 갖는다.
+    </div>
+</body>
+</html>

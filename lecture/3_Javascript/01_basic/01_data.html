@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+</head>
+<body>
+    <p>개발자 도구의 Console에 출력됩니다.</p>
+</body>
+<script>
+    let str = "문자열";
+    let num = 100;
+    let bool = true;
+    let undef;
+    let nl = null;
+    let obj = {
+        a : "문자열",
+        b : 200
+    };
+    let arry = [1, 2, false, 4, "5"];
+
+    //typeof(변수) : 변수의 자료형을 출력
+    console.log("str", str, typeof(str));
+    console.log("num", num, typeof(num));
+    console.log("bool", bool, typeof(bool));
+    console.log("undef", undef, typeof(undef));
+    console.log("nl", nl, typeof(nl));
+    console.log("obj", obj, typeof(obj));
+    console.log("arry", arry, typeof(arry));
+
+    //Object member
+    console.log("obj.a", obj.a, typeof(obj.a));
+    console.log("obj.b", obj.b, typeof(obj.b));
+    //Array
+    console.log("arry[0]", arry[0], typeof(arry[0]));
+    console.log("arry[2]", arry[2], typeof(arry[2]));
+    console.log("arry[4]", arry[4], typeof(arry[4]));
+    console.log(arry[4]);//숫자문자열을 출력하면 숫자와 구분되지 않는다.
+
+    //상수
+    const cs = "abc";
+    // cs = "edf"; // 에러 발생
+
+    //var과 let의 차이
+    console.log("v1", v1);  //hoisting 가능
+    var v1 = 100;
+    console.log("v1", v1);
+    var v1 = 200;   //동일한 변수 재선언 가능
+    console.log("v1", v1);
+
+    // console.log("l1", l1); //에러 발생. hoisting 불가
+    let l1 = 100;
+    console.log("l1", l1);
+    // let l1 = 200;        //에러 발생. 재선언 불가
+    // console.log("l1", l1);
+</script>
+</html>

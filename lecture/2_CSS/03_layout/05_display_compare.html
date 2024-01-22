@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display 비교</title>
+    <style>
+        span {
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: yellow;
+        }
+        .a {
+            display: inline;
+        }
+        .b {
+            display: inline-block;
+        }
+        .c {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>inline vs inline-block vs block</h1>
+    <h2>inline</h2>
+    <div>
+        Lorem 
+        <span class="a">ipsum</span>
+        <span class="a">dolor</span>
+        sit amet, consectetur adipiscing elit.
+    </div>
+    <hr>
+
+    <h2>inline-block</h2>
+    <div>
+        Lorem 
+        <span class="b">ipsum</span>
+        <span class="b">dolor</span>
+        sit amet, consectetur adipiscing elit.
+    </div>
+    <hr>
+    
+    <h2>block</h2>
+    <div>
+        Lorem 
+        <span class="c">ipsum</span>
+        <span class="c">dolor</span>
+        sit amet, consectetur adipiscing elit.
+    </div>
+</body>
+</html>

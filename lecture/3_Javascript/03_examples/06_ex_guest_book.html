@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방명록</title>
+    <style>
+        div {
+            margin: 10px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>방명록</h2>
+    <div>
+        <input id="name" type="text" placeholder="이름"><br>
+        <input id="content" type="text" placeholder="내용"><br>
+        <button>추가</button>
+        <button>삭제</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>선택</th>
+                <th>번호</th>
+                <th>이름</th>
+                <th>내용</th>
+            </tr>
+        </thead>
+        <tbody class="tableList">
+        </tbody>
+    </table>
+</body>
+<script>
+    const btns = document.querySelectorAll("button");
+    const tList = document.querySelector(".tableList");
+    const nInput = document.querySelector("#name");
+    const cInput = document.querySelector("#content");
+
+    //번호용 카운터
+    let cnt = 1;
+
+    //추가 버튼
+    btns[0].onclick = () => {
+        let n = nInput.value;
+        let c = cInput.value;
+        
+        if(n == ""){
+            alert("이름을 입력하세요.");
+            return;
+        }
+        if(c == ""){
+            alert("내용를 입력하세요.");
+            return;
+        }
+
+        //추가 요소 생성.(tr 1, td 4, input 1, textNode 3)
+        const elemtr = document.createElement("tr");
+        //체크박스 td
+        const elemtd1 = document.createElement("td");
+        const elemInput = document.createElement("input");
+        elemInput.type = "checkbox";
+        elemInput.classList.add("check");
+        elemtd1.appendChild(elemInput);
+        //번호 td
+        const elemtd2 = document.createElement("td");
+        const txtNo2 = document.createTextNode(cnt);
+        elemtd2.appendChild(txtNo2);
+        //이름 td
+        const elemtd3 = document.createElement("td");
+        const txtNo3 = document.createTextNode(n);
+        elemtd3.appendChild(txtNo3);
+        //내용 td
+        const elemtd4 = document.createElement("td");
+        const txtNo4 = document.createTextNode(c);
+        elemtd4.appendChild(txtNo4);
+        //tr에 td들을 추가
+        elemtr.appendChild(elemtd1);
+        elemtr.appendChild(elemtd2);
+        elemtr.appendChild(elemtd3);
+        elemtr.appendChild(elemtd4);
+        //table에 tr을 추가
+        tList.appendChild(elemtr);
+
+        cnt++;//카운터 증가
+        nInput.value = "";
+        cInput.value = "";
+    }
+
+    btns[1].onclick = () => {
+        //표에 들어간 체크박스 요소들.(배열)
+        const list = document.querySelectorAll(".check");
+
+        for(let item of list){
+            if(item.checked == true){
+                //<input>.<td>.<tr> 삭제
+                item.parentElement.parentElement.remove();
+            }
+        }
+    }
+</script>
+</html>

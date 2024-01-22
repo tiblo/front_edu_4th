@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //함수 선언
+    function helloFunc(){
+        console.log(1234);
+    }
+
+    //함수 사용
+    helloFunc();
+
+    //데이터(결과값) 반환 함수
+    function returnFunc(){
+        return 123;
+        // console.log("ABC");//return 다음 문장은 실행 안됨
+    }
+
+    const a = returnFunc();
+    console.log(a);
+
+    //함수 재사용
+    function sum(x, y){
+        return x + y;
+    }
+
+    let f = sum(1, 2);
+    let s = sum(7, 12);
+    let t = sum(2, 4);
+
+    console.log(f, s, t);
+
+    //익명함수(함수 표현식) - 함수의 hoisting 방지
+    const world = function(){
+        console.log("hello world~");
+    }
+    world();
+</script>
+</html>

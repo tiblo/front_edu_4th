@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selector</title>
+    <style>
+        div {
+            margin: 20px;
+            width: 80%;
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM Selector</h1>
+    <p>ES6 문법에서 querySelector와 querySelectorAll이 추가됨</p>
+    <div>
+        <h2>getElementsByTagName</h2>
+        <span>항목1</span>
+        <span>항목2</span>
+        <span>항목3</span>
+    </div>
+    <hr>
+
+    <div>
+        <h2>getElementsByClassName</h2>
+        <p class="c1">단락</p>
+        <span class="c1">항목</span>
+        <b class="c1">강조</b>
+    </div>
+    <hr>
+    
+    <div>
+        <h2>getElementById</h2>
+        <button id="b1">버튼1</button>
+        <button id="b1">버튼2</button>
+        <button id="b2">버튼3</button>
+        <button id="b2">버튼4</button>
+    </div>
+    <hr>
+
+    <div>
+        <h2>querySelector</h2>
+        <button id="b3">버튼1</button>
+        <button id="b3">버튼2</button>
+        <button class="b4">버튼3</button>
+        <button class="b4">버튼4</button>
+    </div>
+    <hr>
+
+    <div>
+        <h2>querySelectorAll</h2>
+        <button id="b5">버튼1</button>
+        <button id="b5">버튼2</button>
+        <button class="b6">버튼3</button>
+        <button class="b6">버튼4</button>
+    </div>
+</body>
+<script>
+    const spans = document.getElementsByTagName("span");
+    console.log(spans);
+
+    const cls = document.getElementsByClassName("c1");
+    console.log(cls);
+
+    const btn1 = document.getElementById("b1");
+    console.log(btn1);
+    const btn2 = document.getElementById("b2");
+    console.log(btn2);
+    //동일한 id여도 1개만 선택
+
+    const btn3 = document.querySelector("#b3");
+    console.log(btn3);
+    const btn4 = document.querySelector(".b4");
+    console.log(btn4);
+    //동일한 id나 class여도 1개만 선택
+
+    const btn5 = document.querySelectorAll("#b5");
+    console.log(btn5);
+    const btn6 = document.querySelectorAll(".b6");
+    console.log(btn6);
+    //동일한 id나 class를 모두 선택
+</script>
+</html>

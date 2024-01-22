@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제4-body tag</title>
+    <style>
+        /* 공간 태그용 스타일 */
+        div { /* 모두 적용됨 */
+            background-color: yellow;
+            width: 80%;
+            height: 100px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        span {
+            background-color: green;
+            width: 100px; /* 적용 안됨 */
+            height: 100px; /* 적용 안됨 */
+            border: 3px dashed red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>이미지 태그</h2>
+    <img src="mlogo.png" alt="M로고" title="로고" width="200" height="200">
+    <hr>
+    <h2>연결(링크) 태그</h2>
+    <a href="https://www.naver.com" target="_blank">네이버</a>
+    <br>
+    <a href="01_element_kind.html" target="_self">요소의 종류</a>
+    <hr>
+    <h2>공간 태그</h2>
+    <div>
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit.
+        Nullam quis tortor nec enim 
+        convallis hendrerit.
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet, 
+        <span>consectetur</span> adipiscing elit.
+        Nullam <span>quis tortor nec enim</span>
+        convallis hendrerit.
+    </div>
+</body>
+</html>

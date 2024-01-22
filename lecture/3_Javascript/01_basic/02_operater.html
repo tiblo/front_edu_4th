@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+<body>
+    <p>개발자 도구의 Console에 출력됩니다.</p>
+</body>
+<script>
+    let a = 7;
+    let b = 3;
+    let c = "3";
+
+    console.log("a : ", a, ", b : ", b, ", c: ", c);
+
+    console.log("+ : ", a + b);
+    console.log("+ : ", b + c);//숫자 + 문자열 -> 문자열 + 문자열 : 두 문자열의 결합으로 처리
+    console.log("- : ", a - b);//+를 제외한 나머지 연산에서는 숫자문자열도 숫자로 변환하여 처리 가능
+    console.log("* : ", a * b);
+    console.log("/(실수) : ", a / b);//정수 나눗셈도 실수로 변환하여 처리
+    console.log("/(정수) : ", parseInt(a / b));//몫을 구할 경우는 parseInt() 사용
+    console.log("% : ", a % b);//나머지 연산
+
+    console.log("a > b : ", a > b);
+    console.log("a >= b : ", a >= b);
+    console.log("a < b : ", a < b);
+    console.log("a <= b : ", a <= b);
+    console.log("a == b : ", a == b);
+    console.log("a != b : ", a != b);
+
+    //==와 ===
+    let d = 10;
+    let e = "10";
+    console.log("d : ", d, ", e : " + e);
+
+    console.log("== : ", d == e);
+    console.log("=== : ", d === e);
+    console.log("!= : ", d != e);
+    console.log("!== : ", d !== e);
+</script>
+</html>

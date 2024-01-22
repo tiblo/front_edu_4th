@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적 처리 프로그램</title>
+    <style>
+        input {
+            height: 30px;
+        }
+        .wrap {
+            width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .init, .btnarea, #eve {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        #space {
+            width: 600px;
+            display: flex;
+            justify-content: left;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+        .student {
+            display: flex;
+            align-items: center;
+            margin: 5px;
+        }
+        .no {
+            width: 50px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+        .score {
+            width: 200px;
+            height: 30px;
+        }
+        #eve {
+            display: flex;
+            justify-content: center;
+        }
+        #eve>div {
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h2>성적 관리 프로그램</h2>
+        <div class="init">
+            인원수 : <input type="number" id="in_num">
+            <button id="create">생성</button>
+        </div>
+        <div class="btnarea">
+            <button id="sum">총점</button>
+            <button id="avg">평균</button>
+        </div>
+        <div id="space"></div>
+        <div id="eve"></div>
+    </div>
+</body>
+<script>
+    //제어용 요소 가져오기
+    const inNum = document.querySelector("#in_num");
+    const cbtn = document.querySelector("#create");
+    const sumbtn = document.querySelector("#sum");
+    const avgbtn = document.querySelector("#avg");
+    const sp = document.querySelector("#space");
+    const ev = document.querySelector("#eve");
+
+    //산술 처리용 변수
+    let sum = 0;
+    let avg = 0;
+    let stnum = 0;
+
+    //생성 버튼 처리
+    cbtn.addEventListener("click", function(){
+        //생성/초기화 분류 처리
+        if(cbtn.innerText == "생성"){
+            stnum = inNum.value;
+            if(stnum != ""){
+                inNum.value = "";
+                inNum.disabled = true;
+                cbtn.innerText = "초기화";
+                
+                let str = "";
+                
+                //성적 입력 칸을 학생 수 만큼 반복하여 생성.
+                for(let i = 1; i <= stnum; i++){
+                    str += `<div class="student">
+                                <div class="no">${i}</div>
+                                <input class="score" type="number">
+                            </div>`;
+                }
+
+                sp.innerHTML = str;//공간에 입력 칸 문장 출력
+            }
+            else {
+                alert("인원수를 입력하세요.");
+            }            
+        }
+        else {//초기화 버튼을 눌렀을 때
+            let yn = confirm("다시 시작하시겠습니까?");
+            if(yn){
+                inNum.disabled = false;
+                cbtn.innerText = "생성";
+                sp.innerHTML = "";
+                ev.innerHTML = "";
+                sum = 0;
+                avg = 0;
+                stnum = 0;
+            }
+        }
+    });
+
+    //총점 버튼의 처리
+    sumbtn.addEventListener("click", function(){
+        if(stnum != 0){//만일 학생 수가 입력되어 있으면
+            //학생별 점수입력 칸(요소)을 모은다.(배열)
+            const inputs = document.querySelectorAll(".score");
+
+            sum = 0;//총점 초기화
+
+            for(let v of inputs){//입력요소배열에서 순차적으로 요소를 꺼내옴.
+                //입력요소에서 입력 값을 꺼내와서 값이 있는지 비교.
+                if(v.value != ""){//만일 값이 있다면
+                    sum += Number(v.value);//숫자로 변환하여 누적
+                }
+                else {//만일 값이 없다면
+                    alert("성적을 모두 입력하세요.");
+                    //break;
+                    return;//함수를 여기서 종료.
+                }
+            }
+            ev.innerHTML = `<div>총점 : ${sum}</div>`;//총점 출력
+        }
+        else {//인원 수 입력 없이 총점 버튼을 누른 경우
+            alert("인원수 입력부터 시작해 주세요.");
+        }//else 문 종료
+    });
+
+    avgbtn.addEventListener("click", function(){
+        if(sum == 0){
+            alert("총점을 구해야 합니다.");
+            return;
+        }
+        avg = sum / stnum;
+        ev.innerHTML = `<div>총점 : ${sum}</div>
+                        <div>평균 : ${avg}</div>`;
+    });
+</script>
+</html>

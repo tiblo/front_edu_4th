@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머</title>
+</head>
+<body>
+    <h2>타이머</h2>
+    <input type="number" id="setNo" 
+        placeholder="초단위 입력"><br>
+    <button>설정</button>
+    <button>해제</button>
+    <hr>
+
+    <h2>카운트 증가</h2>
+    <p><b id="cnt">0</b></p>
+    <p>
+        <button>시작</button>
+        <button>중지</button>
+    </p>
+    <hr>
+
+    <h2>시계</h2>
+    <p>현재 시간 : <b id="now">00:00:00</b></p>
+</body>
+<script>
+    const btns = document.querySelectorAll("button");
+    const setNum = document.querySelector("#setNo");
+
+    btns[1].disabled = true;
+    btns[3].disabled = true;
+
+    let al;//알람 저장 변수
+    btns[0].onclick = () => {
+        btns[0].disabled = true;
+        btns[1].disabled = false;
+        let sn = Number(setNum.value) * 1000;
+
+        al = setTimeout(function(){
+            alert(`${sn/1000}초 경과`);
+            btns[0].disabled = false;
+            btns[1].disabled = true;
+        }, sn);
+    }
+    btns[1].onclick = () => {
+        clearTimeout(al);//알람 삭제
+        btns[0].disabled = false;
+        btns[1].disabled = true;
+    }
+
+    ///////////////////////////////////////
+    let inter;
+    let n = 0;
+    const num = document.querySelector("#cnt");
+
+    btns[2].onclick = () => {
+        n = 0;
+        num.innerHTML = n;
+        btns[2].disabled = true;
+        btns[3].disabled = false;
+        inter = setInterval(function(){
+            n++;
+            num.innerHTML = n;
+        }, 1000);
+    }
+    btns[3].onclick = () => {
+        clearInterval(inter);
+        btns[2].disabled = false;
+        btns[3].disabled = true;
+    }
+
+    //////////////////////////////////////
+    const clock = document.querySelector("#now");
+    function getTime(){
+        let time = new Date();
+        let h = String(time.getHours()).padStart(2, "0");
+        let m = String(time.getMinutes()).padStart(2, "0");
+        let s = String(time.getSeconds()).padStart(2, "0");
+        clock.innerHTML = `${h}:${m}:${s}`;
+    }
+    getTime();//최초 한번 실행해서 현재 시간 출력
+    setInterval(getTime, 1000);
+</script>
+</html>

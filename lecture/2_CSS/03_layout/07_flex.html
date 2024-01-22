@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container {
+            width: 300px;
+            /* height: 400px; */
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+			align-content: center;
+            align-items: center;
+        }
+        .item {
+            margin: 10px;
+            padding: 20px;
+            background-color: darkgreen;
+            color: white;
+            border-radius: 5px;
+            /* width: 100px; */
+            /* height: 100px; */
+        }
+        .h-200 {
+            height: 200px;
+        }
+        .w-200 {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item1</div>
+        <div class="item w-200">item2</div>
+        <div class="item h-200">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+    </div>
+</body>
+</html>
