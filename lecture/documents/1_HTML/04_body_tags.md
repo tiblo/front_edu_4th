@@ -79,9 +79,7 @@
 
 ## 표 tag
 
-<p align="center">
-<img src="image.png" width="60%">
-</p>
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/c7863aa4-7190-4363-b74d-507f874a1beb)
 
 ### \<table>
 * 표를 표현하는데 사용하는 태그
@@ -159,9 +157,7 @@
 URL(Uniform Resource Locator) : 통합자원 위치정보<br>
 URN(Uniform Resource Name) : 통합자원 이름
 
-<p align="center">
-<img src="image-1.png" width="50%">
-</p>
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/d0537102-8ab3-4ffa-990b-1266549eac73)
 
 ### 예제
 ```html
