@@ -2,7 +2,7 @@
 
 ## 기본적인 웹 운영형태
 
-![alt text](image.png)
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/0edcaa4f-a19d-4b8c-b943-5a18ef069860)
 
 사용자는 웹 브라우저를 통해 서버에 요청(Request)을 전송하면 서버는 요청한 내용(Resource, Data 등)을 처리하여 응답(Response)을 전송하는 구조
 
@@ -61,5 +61,4 @@ https://github.com/tiblo/front_edu_4th
 * 파일 메뉴 > 폴더 열기...
     * ‘폴더 열기 창’에서 프로젝트용 폴더를 생성(start01) > ‘폴더 선택’ 클릭
 
-![alt text](image-1.png)
-
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/691489de-560f-4113-b5c8-99f8f8149f5a)
