@@ -2,7 +2,8 @@
 
 ## 기본적인 웹 운영형태
 
-![image](https://github.com/tiblo/front_edu_4th/assets/34559256/0edcaa4f-a19d-4b8c-b943-5a18ef069860)
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/80859199-8c66-4d9d-9d4f-0b61c1226a63)
+
 
 사용자는 웹 브라우저를 통해 서버에 요청(Request)을 전송하면 서버는 요청한 내용(Resource, Data 등)을 처리하여 응답(Response)을 전송하는 구조
 
