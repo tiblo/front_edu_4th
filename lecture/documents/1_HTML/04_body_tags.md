@@ -79,7 +79,7 @@
 
 ## 표 tag
 
-![image](https://github.com/tiblo/front_edu_4th/assets/34559256/c7863aa4-7190-4363-b74d-507f874a1beb)
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/32c0c9ed-45bf-4cb6-94f4-9dc1f753f654)
 
 ### \<table>
 * 표를 표현하는데 사용하는 태그
