@@ -20,7 +20,8 @@ Web 문서의 골격을 만드는 언어
 ### 요소(Element)
 #### 구조
 
-![alt text](image-2.png)
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/7ab47739-cab7-4f99-906e-4509fed13add)
+
 
 #### 속성(attribute)
 요소에 대한 추가적인 정보를 지정할 때 사용<br>
@@ -42,7 +43,7 @@ Web 문서의 골격을 만드는 언어
 ## 문서(Document)의 구조
 ### 전체 구조
 
-<img src="image-3.png" width="80%">
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/74f0ac29-40fc-40c3-b72f-93cce05f9bd5)
 
 
 ### 계층 구조
@@ -50,7 +51,7 @@ Web 문서의 골격을 만드는 언어
 * ‘상위 요소’ - ‘하위 요소’ 또는 ‘부모 요소’ - ‘자식 요소’로 표현
 * 요소 내부에 요소가 중첩되는 형상
 
-<img src="image-4.png" width="80%">
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/70d5516e-b5e1-480c-88dd-04801b0c8b03)
 
 * 들여쓰기를 사용하여 상위 요소(부모)와 하위 요소(자식)를 구분
 
@@ -59,6 +60,6 @@ Web 문서의 골격을 만드는 언어
 ## 초기 화면 작성 및 실행
 index.html
 
-<img src="image-5.png" width="80%">
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/1f37e45a-a0d7-493d-815e-eb5c7ba1f5eb)
 
 > ```!``` + ```Enter↵``` 조합으로 문서의 기본 문장을 자동 완성
