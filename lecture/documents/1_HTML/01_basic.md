@@ -20,7 +20,7 @@ Web 문서의 골격을 만드는 언어
 ### 요소(Element)
 #### 구조
 
-![image](https://github.com/tiblo/front_edu_4th/assets/34559256/c4d88d80-e841-4cb5-a3d8-6f3536bc8b07)
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/82b56376-9f39-403b-a567-1e220a3536fc)
 
 #### 속성(attribute)
 요소에 대한 추가적인 정보를 지정할 때 사용<br>
