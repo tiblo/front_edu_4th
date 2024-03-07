@@ -161,7 +161,8 @@
 - URL(Uniform Resource Locator) : 통합자원 위치정보<br>
 - URN(Uniform Resource Name) : 통합자원 이름
 
-
+<br><br><br><br><br>
+---
 
 ### 예제
 ```html
