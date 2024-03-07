@@ -20,7 +20,7 @@ Web 문서의 골격을 만드는 언어
 ### 요소(Element)
 #### 구조
 
-![alt text](image-2.png)
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/f5cf70e5-3eb1-4ca7-96a8-38bb045645e4)
 
 #### 속성(attribute)
 요소에 대한 추가적인 정보를 지정할 때 사용<br>
@@ -42,15 +42,14 @@ Web 문서의 골격을 만드는 언어
 ## 문서(Document)의 구조
 ### 전체 구조
 
-<img src="image-3.png" width="80%">
-
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/3e6bb761-ea03-4562-b018-7e78f4ffac93)
 
 ### 계층 구조
 * 문서를 구성하는 요소는 계층 구조를 형성
 * ‘상위 요소’ - ‘하위 요소’ 또는 ‘부모 요소’ - ‘자식 요소’로 표현
 * 요소 내부에 요소가 중첩되는 형상
 
-<img src="image-4.png" width="80%">
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/df86fb2d-eadc-4b4c-b3b8-1764f2a8a76f)
 
 * 들여쓰기를 사용하여 상위 요소(부모)와 하위 요소(자식)를 구분
 
@@ -59,9 +58,9 @@ Web 문서의 골격을 만드는 언어
 ## 초기 화면 작성 및 실행
 index.html
 
-<img src="image-5.png" width="80%">
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/e006469e-0b64-4774-9205-ffef2dabcf8e)
 
-> ```!``` + ```Enter↵``` 조합으로 문서의 기본 문장을 자동 완성
+> ``!`` + ``Enter↵`` 조합으로 문서의 기본 문장을 자동 완성
 
 <br>
 
@@ -279,7 +278,7 @@ index.html
 
 ## 표 tag
 
-<img src="image.png" width="50%" align="right">
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/07c334dc-c640-47a0-8a33-1a3d085f292d)
 
 ### \<table>
 * 표를 표현하는데 사용하는 태그
@@ -355,16 +354,12 @@ index.html
         * _self(기본값), _blank(새 탭)
 
 ### 참고
----
-<img src="image-1.png" width="30%" align=right>
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/c6099aa8-0875-4c02-928b-7569a72fa5b5)
 
 - URI(Uniform Resource Indentifier) : 통합자원 식별자
 - URL(Uniform Resource Locator) : 통합자원 위치정보
 - URN(Uniform Resource Name) : 통합자원 이름
 
-
-<br><br><br><br><br>
----
 
 ### 예제
 ```html
