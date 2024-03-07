@@ -261,7 +261,7 @@ world();
 
 자바스크립트로 DOM 구조에 접근할 수 있는 방법이 제공되며 이를 통해 문서 구조, 스타일, 내용등을 변경
 
-![alt text](image.png)
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/079c7871-ba93-4e96-83af-0a1dee58976a)
 
 <br>
 
