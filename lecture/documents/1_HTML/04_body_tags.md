@@ -156,7 +156,7 @@
 ### 참고
 
 <p align=right>
-![image]https://github.com/tiblo/front_edu_4th/assets/34559256/d0537102-8ab3-4ffa-990b-1266549eac73
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/d0537102-8ab3-4ffa-990b-1266549eac73)
 </p>
 
 - URI(Uniform Resource Indentifier) : 통합자원 식별자<br>
