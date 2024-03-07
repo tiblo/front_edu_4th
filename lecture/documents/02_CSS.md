@@ -502,9 +502,7 @@ input[type='password'] {
 # Box Model
 모든 요소는 사각형 상자(Box) 형태로 문서에 배치됨
 
-<p align="center">
-<img src="image.png" width="80%">
-</p>
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/2bbe851f-6ec5-4dc0-90e1-c75c40bff0b4)
 
 ## width, height
 요소의 너비와 높이를 지정
@@ -551,7 +549,7 @@ input[type='password'] {
 ## border-radius
 요소의 모서리를 둥글게 설정하는 속성
 
-<img src="image-5.png" width="60%">
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/5eea2265-8e5c-43cc-965f-45855acf463d)
 
 (이미지 출처 : https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-left-radius)
 
@@ -773,7 +771,7 @@ img {
 ## line-height
 한줄의 높이. 행간 간격
 
-<img src="image-6.png" width=60%>
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/7c24d131-2b82-4988-974d-533d2ec8b330)
 
 (이미지 출처 : https://www.w3.org/TR/css-inline-3/)
 
@@ -1477,7 +1475,7 @@ css
 
 방향에 따른 축 설정
 
-<img src="image-7.png" width="90%"> 
+![image](https://github.com/tiblo/front_edu_4th/assets/34559256/fb72631f-999c-4cf6-866f-c9adf7f56533)
 
 (이미지 출처 : https://www.linkedin.com/posts/nehha_css-flexbox-activity-7106953710332715009-j7D4)
 
