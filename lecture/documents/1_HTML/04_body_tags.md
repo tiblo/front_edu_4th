@@ -152,12 +152,18 @@
     * target - 이동할 문서의 출력 대상을 지정하는 속성.
         * _self(기본값), _blank(새 탭)
 
+---
 ### 참고
-> URI(Uniform Resource Indentifier) : 통합자원 식별자<br>
-URL(Uniform Resource Locator) : 통합자원 위치정보<br>
-URN(Uniform Resource Name) : 통합자원 이름
 
-![image](https://github.com/tiblo/front_edu_4th/assets/34559256/d0537102-8ab3-4ffa-990b-1266549eac73)
+<p align=right>
+https://github.com/tiblo/front_edu_4th/assets/34559256/d0537102-8ab3-4ffa-990b-1266549eac73
+</p>
+
+- URI(Uniform Resource Indentifier) : 통합자원 식별자<br>
+- URL(Uniform Resource Locator) : 통합자원 위치정보<br>
+- URN(Uniform Resource Name) : 통합자원 이름
+
+
 
 ### 예제
 ```html
