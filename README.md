@@ -57,6 +57,14 @@ https://www.lipsum.com/
 ![preview-config](https://github.com/tiblo/front-end_edu/assets/34559256/c500957b-ae63-4149-b2fa-9fa91e7e08aa)
 
 
+## setting.json 여는 방법
+File > Preferences > Settings
+
+검색 : setting
+```
+Edit in settings.json
+```
+
 
 
 
