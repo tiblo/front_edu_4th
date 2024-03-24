@@ -691,6 +691,16 @@ ps[1].innerHTML =
 }
 ```
 
+### 색상 표현
+- 색상 이름 - 브라우저에서 제공하는 색상(red, green, tomato 등)
+- 16진수 코드(HEX, Hexadecimal Colors) 
+  - 검정색 : #000000
+- rgb 함수 - 빨간색(Red), 초록색(Green), 파란색(Blue)로 표현. 
+  - 각각 0~255. 
+  - 초록색 : rgb(0, 255, 0)
+- rgba 함수 - 투명도(Alpha channel)을 포함
+    - 반투명 초록색 : rgba(0, 255, 0, 0.5)
+
 <br>
 
 ## text-align
@@ -934,16 +944,6 @@ https://fonts.google.com/
     background-color: rgba(255,0,0,0.5);
 }
 ```
-
-### 색상 표현
-- 색상 이름 - 브라우저에서 제공하는 색상(red, green, tomato 등)
-- 16진수 코드(HEX, Hexadecimal Colors) 
-  - 검정색 : #000000
-- rgb 함수 - 빨간색(Red), 초록색(Green), 파란색(Blue)로 표현. 
-  - 각각 0~255. 
-  - 초록색 : rgb(0, 255, 0)
-- rgba 함수 - 투명도(Alpha channel)을 포함
-    - 반투명 초록색 : rgba(0, 255, 0, 0.5)
 
 <br>
 
