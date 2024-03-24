@@ -817,7 +817,7 @@ html
 
 ## font-style
 글씨체의 모양  
-굵은 글씨(Bold), 이텔릭(Italic)  
+이텔릭(Italic), 기울임(Oblique)
 
 ```html
 <body>
