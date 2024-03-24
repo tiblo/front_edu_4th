@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제-자동슬라이드</title>
+    <link rel="stylesheet" href="css/slider.css">
+    <style>
+        *  {
+            margin: 0;
+            padding: 0;
+        }
+        div {    
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="image_slider">
+        <input type="radio" name="pos" id="pos1" checked>
+        <input type="radio" name="pos" id="pos2">
+        <input type="radio" name="pos" id="pos3">
+        <input type="radio" name="pos" id="pos4">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="pos">
+            <label for="pos1" onclick="change(0)"></label>
+            <label for="pos2" onclick="change(1)"></label>
+            <label for="pos3" onclick="change(2)"></label>
+            <label for="pos4" onclick="change(3)"></label>
+        </p>
+    </div>
+</body>
+<script src="js/slider.js"></script>
+</html>
