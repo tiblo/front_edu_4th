@@ -13,7 +13,7 @@
 https://www.colourlovers.com/web/trends/websites
 
 # 더미 텍스트 사이트
-https://www.lipsum.com/
+https://generator.lorem-ipsum.info/_latin
 
 # 유용한 VSCode 확장(Extension)
 ## HTML
